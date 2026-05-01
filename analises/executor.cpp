@@ -5,15 +5,17 @@
 #include "complexidade.h"
 
 #include <iostream>
-#include <fstream>
+
+struct Resultado {
+    int n;
+    double tempo;
+};
 
 void executarTeste(void (*func)(int*, int), const char* nome) {
 
     int tamanhos[5] = {1000, 2000, 3000, 4000, 5000};
-    double tempos[5];
 
-    std::ofstream arquivo(std::string(nome) + ".csv");
-    arquivo << "n,tempo\n";
+    Resultado resultados[5];
 
     std::cout << "\nAlgoritmo: " << nome << std::endl;
 
@@ -24,21 +26,28 @@ void executarTeste(void (*func)(int*, int), const char* nome) {
 
         double valores[5];
 
+        // repetição para calcular média
         for (int j = 0; j < 5; j++) {
 
             gerarVetor(v, n);
-
             valores[j] = medirTempo(func, v, n);
         }
 
-        tempos[i] = calcularMedia(valores, 5);
+        double media = calcularMedia(valores, 5);
 
-        arquivo << n << "," << tempos[i] << "\n";
+        // armazenando em memória
+        resultados[i].n = n;
+        resultados[i].tempo = media;
 
-        std::cout << "n=" << n << " tempo=" << tempos[i] << std::endl;
+        std::cout << "n=" << n << " tempo=" << media << std::endl;
     }
 
-    arquivo.close();
+    // preparar dados para análise de complexidade
+    double tempos[5];
+
+    for (int i = 0; i < 5; i++) {
+        tempos[i] = resultados[i].tempo;
+    }
 
     compararComplexidade(tamanhos, tempos, 5);
 }
