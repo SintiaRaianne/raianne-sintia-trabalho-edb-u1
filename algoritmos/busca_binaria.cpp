@@ -1,7 +1,7 @@
 #include "busca_binaria.h"
 #include <algorithm>
 
-int buscaBinaria(int v[], int inicio, int fim, int valor) {
+int buscaBinaria(int v[], int inicio, int fim, int valor) {  // Função para o algoritmo de busca binária
 
     while (inicio <= fim) {
 

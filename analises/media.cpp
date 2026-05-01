@@ -1,6 +1,7 @@
 #include "media.h"
 
-double calcularMedia(double valores[], int tamanho) {
+double calcularMedia(double valores[], int tamanho) {  // Calcula a média dos tempos
+
 
     double soma = 0;
 

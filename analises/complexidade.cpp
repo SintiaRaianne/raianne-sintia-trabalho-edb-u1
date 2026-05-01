@@ -2,8 +2,9 @@
 #include <iostream>
 #include <cmath>
 
-void compararComplexidade(int n[], double tempo[], int tamanho) {
+void compararComplexidade(int n[], double tempo[], int tamanho) {  // Realiza a comparação de complexidade
 
+    
     double base = tempo[0];
 
     double erro_log = 0;
@@ -12,7 +13,7 @@ void compararComplexidade(int n[], double tempo[], int tamanho) {
     double erro_n2 = 0;
     double erro_n3 = 0;
 
-    for (int i = 0; i < tamanho; i++) {
+    for (int i = 0; i < tamanho; i++) {   // Calcula o erro para cada complexidade
 
         double t = tempo[i] / base;
 
@@ -29,6 +30,8 @@ void compararComplexidade(int n[], double tempo[], int tamanho) {
         erro_n3 += fabs(t - fn3);
     }
 
+    // Imprime os resultados da comparação de complexidade
+
     std::cout << "\nComparacao de complexidade:\n";
 
     std::cout << "Erro O(log n): " << erro_log << std::endl;
@@ -39,6 +42,8 @@ void compararComplexidade(int n[], double tempo[], int tamanho) {
 
     double menor = erro_log;
     std::string resultado = "O(log n)";
+
+    // Determine o menor erro para identificar a complexidade mais provável
 
     if (erro_n < menor) {
         menor = erro_n;

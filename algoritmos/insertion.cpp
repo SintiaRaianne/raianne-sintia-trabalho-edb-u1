@@ -1,8 +1,8 @@
 #include "insertion.h"
 
-void insertionSort(int v[], int n) {
+void insertionSort(int v[], int n) {  // Função para o algoritmo Insertion Sort
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) {  
 
         int chave = v[i];
         int j = i - 1;

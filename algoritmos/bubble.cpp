@@ -1,6 +1,6 @@
 #include "bubble.h"
 
-void bubbleSort(int v[], int n) {
+void bubbleSort(int v[], int n) {   // Função para o algoritmo Bubble Sort
 
     for (int i = 0; i < n - 1; i++) {
 

@@ -1,7 +1,6 @@
 #include "professor.h"
 
-// PROFESSOR USAR O CÓDIGO AQUI
-void algoritmoDoProfessor(int arr[], int n) {        
+void algoritmoDoProfessor(int arr[], int n) {   // Função para o algoritmo do professor   
 
 // Pode colocar qualquer algoritmo aqui
 

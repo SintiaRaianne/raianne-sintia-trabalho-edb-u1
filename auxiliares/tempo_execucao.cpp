@@ -1,7 +1,7 @@
 #include "tempo_execucao.h"
 #include <chrono>
 
-double medirTempo(void (*func)(int*, int), int v[], int n) {
+double medirTempo(void (*func)(int*, int), int v[], int n) {   // Mede o tempo de execução do algoritmo
 
     auto inicio = std::chrono::high_resolution_clock::now();
 
