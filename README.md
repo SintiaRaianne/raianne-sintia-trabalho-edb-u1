@@ -24,7 +24,7 @@
 `Makefile`: Compilação automatizada do projeto
 `README.md`: Este arquivo
   
-## 🏛️ Trabalho Unidade 01
+## 📚 Trabalho Unidade 01
 
 **Objetivo**: 
 
@@ -32,10 +32,14 @@
 
 
 ### Funcionalidades Implementadas:
-- **Cadastro de Livros**: Permite ao usuário adicionar novos livros ao sistema, informando o título e o autor. O sistema define o status inicial do livro como "Disponível".
-- **Listagem de Livros**: Exibe todos os livros cadastrados, mostrando o ID, título, autor e o status atual.
-- **Cadastro de Usuários**: Permite o registro de novos usuários, solicitando nome e matrícula. 
-- **Listagem de Usuários**: Mostra todos os usuários cadastrados no sistema com seus respectivos IDs, nomes e matrículas.
-- **Realização de Empréstimos**: Realiza o empréstimo, verificando a disponibilidade do livro e garantindo que o usuário não tenha ultrapassado o limite permitido de empréstimos ativos.
-- **Menu Interativo**: Exibe o menu principal, permitindo que o usuário o selecione a operação desejada.
-- **Limpeza de Tela**: Limpa o terminal a cada nova interação no menu, oferecendo uma interface mais organizada e agradável.
+- **Execução de Algoritmos**: Permite executar diferentes algoritmos (Bubble Sort, Insertion Sort, Busca Sequencial e Busca Binária) para analise de desempenho.
+- **Geração de Vetores**: Cria automaticamente vetores de diferentes tamanhos.
+- **Medição de Tempo de Execução**: Calcula o tempo de execução de cada algoritmo.
+- **Repetição de Execuções**: Executa cada algoritmo múltiplas vezes para o mesmo tamanho de entrada, reduzindo interferências externas.
+- **Cálculo da Média de Tempo**: Calcula o tempo médio de execução a partir das repetições.
+- **Armazenamento dos Resultados**: Armazena os pares de valores (tamanho da entrada e tempo de execução) para cada algoritmo.
+- **Comparação de Complexidade**: Compara os tempos obtidos com funções assintóticas conhecidas como O(log n), O(n), O(n log n), O(n²) e O(n³), identificando o melhor ajuste.
+- **Análise de Função Externa (Professor)**: Possui uma função específica para inserção de um algoritmo externo, permitindo sua análise sem necessidade de alterar o restante do código.
+- **Execução Automatizada de Testes**: Realiza automaticamente os testes para diferentes tamanhos de entrada, exibindo os resultados no terminal.
+- **Organização Modular do Código**: Estrutura o projeto em diferentes módulos (algoritmos, auxiliares e análise).
+
