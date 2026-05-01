@@ -32,7 +32,7 @@
 
 
 ### Funcionalidades Implementadas:
-- **Execução de Algoritmos**: Permite executar diferentes algoritmos (Bubble Sort, Insertion Sort, Busca Sequencial e Busca Binária) para analise de desempenho.
+- **Execução de Algoritmos**: Permite executar diferentes algoritmos (Bubble Sort, Insertion Sort, Busca Sequencial e Busca Binária) para analisar de desempenho.
 - **Geração de Vetores**: Cria automaticamente vetores de diferentes tamanhos.
 - **Medição de Tempo de Execução**: Calcula o tempo de execução de cada algoritmo.
 - **Repetição de Execuções**: Executa cada algoritmo múltiplas vezes para o mesmo tamanho de entrada, reduzindo interferências externas.
