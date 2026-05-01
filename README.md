@@ -26,7 +26,7 @@
   
 ## 📚 Trabalho Unidade 01
 
-**Objetivo**: 
+**Objetivo**: Implementar um programa em C/C++ capaz de medir e comparar o tempo de execução de diferentes algoritmos, como por exemplo ordenação e busca, a fim de analisar seu comportamento e complexidades.
 
 **Repositório**: https://github.com/SintiaRaianne/raianne-sintia-trabalho-edb-u1.git
 
